@@ -26,7 +26,6 @@ public class LoginPage extends ReuseableUtils{
 	private WebElement SignIn;
 	
 	public void login(String userName,String password) {
-	
 		waitUntilVisiblity(Email).sendKeys(userName);
 		waitUntilVisiblity(Password).sendKeys(password);
 		waitUntilClickable(SignIn).click();
